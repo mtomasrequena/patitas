@@ -1,0 +1,63 @@
+$primary: #414A3A;
+$secondary: #a7a792;
+$danger: rgb(97, 37, 45);
+
+a:link {
+    text-decoration: none;
+}
+
+div nav {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container-list {
+	margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botones-de-cards-mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: end;
+}
+
+.card-container-posts {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center !important;
+}
+
+.layout-cards-disposition{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(3, 1fr);
+}
+
+.card-mascota {
+    height: 18rem
+}
+
+div.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 100px;
+    width: 100px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+
+.body-fondo {
+    background-color: $secondary;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
